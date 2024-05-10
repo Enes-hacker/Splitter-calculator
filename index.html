@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Spli<br />tter</h1>
+      <div class="calculator">
+        <div class="calculator-left">
+          <div class="bill">
+            <form>
+              <label for="">Bill</label>
+
+              <input type="number" class="input bill-input" id="bill-input"/>
+            </form>
+          </div>
+          <div class="select-tip">
+            <p style="width: 100%">Select tip %</p>
+            <div class="select-btn" id="btn-reset">
+              <button class="tips">5%</button>
+            </div>
+            <div class="select-btn" id="btn-reset">
+              <button class="tips">10%</button>
+            </div>
+            <div class="select-btn" id="btn-reset">
+              <button class="tips active-tip" style="background-color: #26C2AE; color: #00474B;">15%</button>
+            </div>
+            <div class="select-btn" id="btn-reset">
+              <button class="tips">25%</button>
+            </div>
+            <div class="select-btn" id="btn-reset">
+              <button class="tips">50%</button>
+            </div>
+            <div class="select-btn" id="btn-reset">
+                <button class="tips" id="tip-custom"><input type="text" class="tip-custom" placeholder="Custom"></button>
+              
+            </div>
+          </div>
+          <div class="number-of-people">
+            <form>
+                <div class="labels">
+                    <label for="" >Number of people %</label>
+                    <label for=""  class="error" style="text-align: right;"></label>
+                </div>
+            
+              <input type="number" class="input input-people" />
+            </form>
+          </div>
+        </div>
+        <div class="calculator-right">
+          <div class="amount tip-amount">
+            <div class="amount-per-person">
+              <div class="total">Tip amount<br /><span>/per person</span></div>
+              <div class="price" id="tip-amount">$0.00</div>
+            </div>
+
+            <div class="amount-per-person">
+              <div class="total" id="tip-amount">Tip amount<br /><span>/per person</span></div>
+              <div class="price" id="total-amount">$0.00</div>
+            </div>
+          </div>
+          <div class="reset-btn" id="btn-reset">
+            <button>Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

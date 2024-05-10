@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button{
+    background: #C5E4E7;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container h1{
+    text-align: center;
+    color: #3D6666;
+    padding: 3rem;
+    letter-spacing: 0.3rem;
+}
+
+
+
+.calculator{
+    width: 920px;
+    height: 481px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    
+}
+
+/*Calculator left*/
+
+.calculator-left{
+    width: 413px;
+    height: 417px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.amount-per-person{
+    padding: 1rem;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+.select-tip{
+    width: 379px;
+    height: 152px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+
+
+.select-btn{
+   
+   
+}
+
+.select-btn button{
+    width: 117px;
+    height: 48px;
+    font-size: 24px;
+    border: unset;
+  
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #00474B;
+    color: #FFFFFF;
+}
+
+.select-btn button:hover{
+   background-color: #9FE8DF;
+  
+}
+
+.select-btn :hover button{
+  
+    color: #00474B;
+ }
+
+
+ .tip-custom{
+    width: 117px;
+    height: 48px;
+ }
+/*Calculator left*/
+
+/*Calculator right*/
+
+.calculator-right{
+    width: 413px;
+    height: 417px;
+    background-color: #00474B;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: auto;
+   
+}
+
+.amount-per-person{
+    display: flex;
+    justify-content: space-between; 
+    width: 333px;
+    height: 71px;
+}
+
+.amount-per-person span{
+    font-size: 13px;
+    color: #7F9D9F;
+}
+
+ .total{
+    padding: 1rem;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.price{
+    width: 143px;
+    height: 71px;
+    font-size: 48px;
+}
+
+.amount{
+    display: flex;   
+    flex-wrap: wrap;
+    
+}
+
+.price{
+    font-size: 48px;
+    color: #26C2AE;
+}
+
+.reset-btn{
+    text-align: center;
+    margin-top: 11rem;
+}
+
+.reset-btn button{
+    padding: .5rem 10rem;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #26C2AE;
+    text-transform: uppercase;
+}
+
+::placeholder{
+    font-size: 24px;
+    color: #547878;
+}
+
+.reset-btn button:hover{
+    background-color: #9FE8DF; 
+}
+
+/*Calculator right*/
+
+
+
+/*Mobile*/
+@media (max-width: 1000px) {
+    .container{
+        width: 375px;
+        height: 789px;
+        margin: auto;
+    }
+    .calculator{
+        margin: auto;
+        width: 375px;
+        height: 789px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .calculator-left{
+       width: 100%;
+    }
+
+    .calculator-right{
+        width: 327px;
+        height: 257px;
+        
+     }
+
+     .bill{
+        width: 311px;
+        height: 78px;
+        margin: auto;
+     }
+
+     .number-of-people{
+        width: 311px;
+        height: 78px;
+        margin: auto;
+     }
+
+     
+
+     .select-tip{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 311px;
+        height: 216px;
+        margin: auto;
+     }
+
+     
+
+     .reset-btn{
+       margin-top: 3rem;
+      
+     }
+
+     .price{
+        font-size: 32px;
+        padding: .5rem;
+     }
+
+     .amount-per-person {
+        padding:0;
+    }
+
+     .reset-btn button{
+        width: 281px;
+        margin: auto;
+        padding: .6rem 0.4rem;
+     }
+
+     .select-btn button{
+        width: 147px;
+        height: 48px;
+     }
+
+     .tip-custom{
+        width: 147px;
+        height: 48px;
+     }
+}
+
+/*search with icon*/
+label{
+    color: hsl(186, 14%, 43%);
+}
+
+input{
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-right: 18px;
+    background-position: 17px 7px;
+    background-repeat: no-repeat;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(189, 41%, 15%);
+    font-weight: bolder;
+    font-family: "Space Mono", monospace;
+}
+.input-people{
+    background-image: url(images/icon-person.svg);
+}
+
+.input::placeholder{
+    font-size: 20px;
+    color: #7F9D9F;
+}
+
+.bill-input{
+    background-image: url(images/icon-dollar.svg);  
+}
+/*search with icon*/
+
+/*Mobile*/
+.labels{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.error {
+    color: red;
+}
+
+
+
